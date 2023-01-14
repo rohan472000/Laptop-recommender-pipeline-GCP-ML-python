@@ -3,7 +3,7 @@ from surprise import *
 import pandas as pd
 
 
-# Define a task to train the model and install library surprise()
+# function to train the model 
 def train_model():
     df = pd.read_csv('laptops.csv')
     reader = Reader(rating_scale=(1, 5))
